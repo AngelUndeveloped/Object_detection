@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Object_detection</string>
+    <string name="image_desc">Selected Image for Object Detection</string>
 </resources>
