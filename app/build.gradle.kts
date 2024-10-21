@@ -37,6 +37,7 @@ android {
     buildFeatures {
         compose = true
     }
+    // Might need to indicate to not compress model file
 }
 
 dependencies {
@@ -49,6 +50,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.camera.core)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -60,6 +62,8 @@ dependencies {
     // TensorFlow Lite Dependencies
     implementation(libs.tensorflow.lite)
     // implementation 'org.tensorflow:tensorflow-lite-gpu:2.12.0'
-    implementation (libs.tensorflow.lite.support)
+    implementation(libs.tensorflow.lite.support)
+    // Object detection and tracking feature with custom bundled model
+    implementation(libs.objects.detection.custom)
 
 }
