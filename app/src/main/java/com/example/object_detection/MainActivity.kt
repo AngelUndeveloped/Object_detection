@@ -14,7 +14,7 @@ import com.example.object_detection.ui.theme.Object_detectionTheme
 
 
 class MainActivity : ComponentActivity() {
-
+    // Create a shared state variable in Jetpack Compose to hold the selected Image Uri(can be null, initialized as null)
     var sharedSelectedImageUri by mutableStateOf<Uri?>(null)
 
     override fun onCreate(savedInstanceState: Bundle?) {
